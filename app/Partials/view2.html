@@ -1,0 +1,13 @@
+	<input type="text" data-ng-model="name" placeholder="city" />
+	Hi {{ name }}
+
+	<ul>
+		<li data-ng-repeat="cust in customers | orderBy: 'name' | filter: city">
+			{{cust.name | uppercase}}
+			-
+			{{ cust.city | uppercase }}
+		</li>
+	</ul>
+</br>
+	<a href="#/view1">go back</a>
+
